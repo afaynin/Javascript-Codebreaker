@@ -1,6 +1,9 @@
 let comboString = "";
 let hint = "";
 let secretCombo = Math.ceil(Math.random()* 3).toString() + " " + Math.ceil(Math.random()* 3).toString() + " " + Math.ceil(Math.random()* 3).toString() + " ";
+let guesses = document.getElementById("guesses");
+let clock = document.getElementById("left");
+let combo = document.getElementById("combination");
 
 function convert(String){
     let s = String;
@@ -12,9 +15,8 @@ function combination(){
  
 
     let id = this.id;
-    let combo = document.getElementById("combination");
-    let guesses = document.getElementById("guesses");
-    let clock = document.getElementById("left")
+    
+   
 
     
     if(id === "one"){
@@ -33,10 +35,15 @@ function combination(){
     comboString = "";
     combo.textContent = "";
   }
-    
-
-
-     if(comboString.length >= 5){
+  if(comboString.length >= 5){
+  combinationInputted(secretCombo, comboString);
+  combo.textContent = "";
+  comboString = "";
+  }
+     
+    }
+ function combinationInputted(secretCombo, comboString){
+    if(comboString.length >= 5){
         if(secretCombo === comboString){
             
             alert("YOU WIN! You spend the rest of your life with your riches. Except for the fact that you are stuck in an infinite time loop, doomed to repeat this trial forver, so the program will now automatically restart. Anyway please give me a hundred, please. I need this for my grade. I'll do anything. Please.");
@@ -50,10 +57,10 @@ function combination(){
             hint = "Greater than combo  ";
             
         }
-        guesses.textContent += " " + comboString + ", " + hint + "!";
+        guesses.textContent += " " + comboString + "-> " + hint + "!";
         clock.textContent -= 1;
         if(clock.textContent === "0"){
-            console.log("You lose");
+          
             alert("GAME OVER! You spend the rest of your life in prison. The program will now automatically restart so you don't have to deal with the magnitude of your failure, but between you and me... I know what you did. Oh yeah, the combo was " + secretCombo + ".");
             document.location.reload();
         }
@@ -61,8 +68,7 @@ function combination(){
         combo.textContent = "";
         comboString = "";
      }
-    }
- 
+ }
  
  
  
