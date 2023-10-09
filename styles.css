@@ -1,5 +1,6 @@
 body{
     background-color: orangered;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 #Codebreaking{
     background-color: yellow;
@@ -8,8 +9,13 @@ body{
 }
 .numb{
     text-align: center;
-    height: 50%;
+    
     background-color: greenyellow;
+}
+#clear{
+    max-width: 100px;
+    max-height: 50px;
+    font-size: 24px;
 }
 #combination{
     
@@ -19,8 +25,16 @@ body{
     
     
 }
+h3{
+    margin: auto;
+    text-align: center;
+    
+}
 #guesses{
     color: black;
+    
+    text-align: center;
+    margin: auto;
 }
 h1{
     color: paleturquoise;
