@@ -9,8 +9,7 @@ function convert(String){
 }
 
 function combination(){
-    console.log(secretCombo);
-    console.log(convert(secretCombo));
+ 
 
     let id = this.id;
     let combo = document.getElementById("combination");
@@ -39,17 +38,17 @@ function combination(){
 
      if(comboString.length >= 5){
         if(secretCombo === comboString){
-            console.log("You win");
+            
             alert("YOU WIN! You spend the rest of your life with your riches. Except for the fact that you are stuck in an infinite time loop, doomed to repeat this trial forver, so the program will now automatically restart. Anyway please give me a hundred, please. I need this for my grade. I'll do anything. Please.");
             document.location.reload();
         }
         if(convert(secretCombo)>convert(comboString)){
             hint = "Less than combo     ";
-            console.log("Less than combo!     ");
+            
         }
         if(convert(secretCombo)<convert(comboString)){
             hint = "Greater than combo  ";
-            console.log("Greater than combo!  ");
+            
         }
         guesses.textContent += " " + comboString + ", " + hint + "!";
         clock.textContent -= 1;
