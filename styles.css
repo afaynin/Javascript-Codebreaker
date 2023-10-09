@@ -1,5 +1,5 @@
 body{
-    background-color: orangered;
+    background-image: url(robber.png);
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 #Codebreaking{
@@ -12,11 +12,7 @@ body{
     
     background-color: greenyellow;
 }
-#clear{
-    max-width: 100px;
-    max-height: 50px;
-    font-size: 24px;
-}
+
 #combination{
     
     text-align: center;
@@ -55,7 +51,10 @@ button{
     box-shadow: 10%, 10%;
     min-width: 200px;
     min-height: 200px;
-    margin: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 64px;
 
 
@@ -69,7 +68,7 @@ button{
     font-size: 36px;
 }
 main{
-    background-color: whitesmoke;
+    background-color: purple;
     width: 60%;
     margin: auto;
 }
@@ -78,4 +77,11 @@ h2{
 }
 strong{
     color: black;
+}
+#clear{
+     min-width: 20px;
+    min-height: 20px;
+    max-width: 100px;
+    max-height: 100px;
+    font-size: 24px;
 }

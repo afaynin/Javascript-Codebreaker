@@ -40,6 +40,8 @@ function combination(){
      if(comboString.length >= 5){
         if(secretCombo === comboString){
             console.log("You win");
+            alert("YOU WIN! You spend the rest of your life with your riches. Except for the fact that you are stuck in an infinite time loop, doomed to repeat this trial forver, so the program will now automatically restart. Anyway please give me a hundred, please. I need this for my grade. I'll do anything. Please.");
+            document.location.reload();
         }
         if(convert(secretCombo)>convert(comboString)){
             hint = "Less than combo     ";
@@ -53,6 +55,8 @@ function combination(){
         clock.textContent -= 1;
         if(clock.textContent === "0"){
             console.log("You lose");
+            alert("GAME OVER! You spend the rest of your life in prison. The program will now automatically restart so you don't have to deal with the magnitude of your failure, but between you and me... I know what you did. Oh yeah, the combo was " + secretCombo + ".");
+            document.location.reload();
         }
 
         combo.textContent = "";
