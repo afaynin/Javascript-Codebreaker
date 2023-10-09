@@ -1,0 +1,67 @@
+body{
+    background-color: orangered;
+}
+#Codebreaking{
+    background-color: yellow;
+    width: 60%;
+    margin: auto;
+}
+.numb{
+    text-align: center;
+    height: 50%;
+    background-color: greenyellow;
+}
+#combination{
+    
+    text-align: center;
+    margin: 12%;
+    color: black;
+    
+    
+}
+#guesses{
+    color: black;
+}
+h1{
+    color: paleturquoise;
+    text-align: center;
+
+
+
+
+}
+p{
+    color: paleturquoise;
+    text-align: center;
+   
+}
+button{
+    background-color: chartreuse;
+    border-radius: 25%;
+    box-shadow: 10%, 10%;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 3%;
+    font-size: 64px;
+
+
+
+
+}
+#lock{
+    text-align: center;
+}
+#clock{
+    font-size: 36px;
+}
+main{
+    background-color: whitesmoke;
+    width: 60%;
+    margin: auto;
+}
+h2{
+    text-align: center;
+}
+strong{
+    color: black;
+}
